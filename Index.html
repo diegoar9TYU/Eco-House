@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Eco-House | Inmobiliaria Ecológica</title>
+
+    <!-- GOOGLE FONTS -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <div class="logo">
+            🌿 Eco-House
+        </div>
+
+        <nav class="navbar">
+
+            <a href="#inicio">Inicio</a>
+            <a href="#catalogo">Propiedades</a>
+            <a href="#filosofia">Filosofía</a>
+            <a href="#blog">Blog</a>
+            <a href="#contacto">Contacto</a>
+
+        </nav>
+
+    </header>
+
+    <!-- HERO -->
+
+    <section class="hero" id="inicio">
+
+        <div class="hero-overlay">
+
+            <div class="hero-content">
+
+                <h1>Encuentra tu hogar ideal en Ecatepec</h1>
+
+                <p>
+                    Casas y departamentos accesibles, modernos y sustentables.
+                </p>
+
+                <!-- BUSCADOR -->
+
+                <div class="search-container">
+
+                    <input type="text"
+                        id="searchInput"
+                        placeholder="Buscar localidad...">
+
+                    <select id="filtroTipo">
+
+                        <option value="">Tipo</option>
+
+                        <option value="venta">Venta</option>
+
+                        <option value="renta">Renta</option>
+
+                    </select>
+
+                    <select id="filtroServicios">
+
+                        <option value="">Servicios</option>
+
+                        <option value="agua">Agua potable</option>
+
+                        <option value="electricidad">Electricidad</option>
+
+                        <option value="metro">Cerca del metro</option>
+
+                        <option value="escuela">Cerca de escuela</option>
+
+                        <option value="transporte">Transporte</option>
+
+                    </select>
+
+                    <button onclick="filtrarPropiedades()">
+                        Buscar
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- BENEFICIOS -->
+
+    <section class="benefits">
+
+        <div class="benefit-card">
+
+            <i class="fa-solid fa-solar-panel"></i>
+
+            <h3>Energía Solar</h3>
+
+            <p>Propiedades equipadas con paneles solares.</p>
+
+        </div>
+
+        <div class="benefit-card">
+
+            <i class="fa-solid fa-droplet"></i>
+
+            <h3>Agua Potable</h3>
+
+            <p>Sistemas modernos de agua y ahorro sustentable.</p>
+
+        </div>
+
+        <div class="benefit-card">
+
+            <i class="fa-solid fa-leaf"></i>
+
+            <h3>Construcción Ecológica</h3>
+
+            <p>Diseños sustentables y amigables con el ambiente.</p>
+
+        </div>
+
+    </section>
+
+    <!-- PROPIEDADES -->
+
+    <section class="properties" id="catalogo">
+
+        <div class="section-title">
+
+            <h2>Propiedades Disponibles</h2>
+
+            <p>
+                Más de 200 propiedades disponibles en Ecatepec
+            </p>
+
+        </div>
+
+        <div class="property-grid" id="propertyGrid">
+
+            <!-- LAS PROPIEDADES SE GENERAN AUTOMÁTICAMENTE -->
+
+        </div>
+
+    </section>
+
+    <!-- FILOSOFIA -->
+
+    <section class="about" id="filosofia">
+
+        <div class="section-title">
+
+            <h2>Nuestra Filosofía</h2>
+
+        </div>
+
+        <div class="mission-container">
+
+            <div class="mission-card">
+
+                <h3>Misión</h3>
+
+                <p>
+                    Facilitar el acceso a una vivienda digna mediante una plataforma digital especializada
+                    en inmuebles de bajo costo.
+                </p>
+
+            </div>
+
+            <div class="mission-card">
+
+                <h3>Visión</h3>
+
+                <p>
+                    Consolidarse como la plataforma tecnológica líder
+                    en vivienda asequible en México.
+                </p>
+
+            </div>
+
+            <div class="mission-card">
+
+                <h3>Valores</h3>
+
+                <ul>
+
+                    <li>✔ Honestidad</li>
+
+                    <li>✔ Calidad</li>
+
+                    <li>✔ Innovación</li>
+
+                    <li>✔ Accesibilidad</li>
+
+                    <li>✔ Compromiso</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- BLOG -->
+
+    <section class="blog" id="blog">
+
+        <div class="section-title">
+
+            <h2>Blog Ecológico</h2>
+
+        </div>
+
+        <div class="blog-grid">
+
+            <div class="blog-card">
+
+                <h3>Cómo ahorrar energía</h3>
+
+                <p>Consejos para disminuir tu consumo eléctrico.</p>
+
+            </div>
+
+            <div class="blog-card">
+
+                <h3>Beneficios de paneles solares</h3>
+
+                <p>Energía renovable y ahorro económico.</p>
+
+            </div>
+
+            <div class="blog-card">
+
+                <h3>Casas inteligentes</h3>
+
+                <p>La tecnología aplicada al hogar moderno.</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACTO -->
+
+    <section class="contact" id="contacto">
+
+        <div class="section-title">
+
+            <h2>Contáctanos</h2>
+
+        </div>
+
+        <form id="formulario">
+
+            <input type="text"
+                id="nombre"
+                placeholder="Nombre completo"
+                required>
+
+            <input type="email"
+                id="correo"
+                placeholder="Correo electrónico"
+                required>
+
+            <textarea id="mensaje"
+                placeholder="Escribe tu mensaje"></textarea>
+
+            <button type="submit">
+                Enviar Mensaje
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <h2>Eco-House</h2>
+
+            <p>
+                Inmobiliaria ecológica líder en Ecatepec.
+            </p>
+
+            <div class="socials">
+
+                <div>
+                    <i class="fa-brands fa-facebook"></i>
+                    Eco-house_Oficial
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-instagram"></i>
+                    Eco-house_oficial
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-envelope"></i>
+                    Eco.Hose.Oficial@gmail.com
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    55 17 97 70 84
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- MODAL -->
+
+    <div class="modal" id="modal">
+
+        <div class="modal-content">
+
+            <span class="close" onclick="cerrarModal()">
+                &times;
+            </span>
+
+            <img id="modalImg">
+
+            <h2 id="modalTitle"></h2>
+
+            <p id="modalPrice"></p>
+
+            <p id="modalDescription"></p>
+
+        </div>
+
+    </div>
+
+    <!-- JS -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
